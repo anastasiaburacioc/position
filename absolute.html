@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: #333;
+        height: 2000px;
+    }
+    .container{
+       /* border: 5px solid green;*/
+        float: left;
+        padding: 10px;
+    }
+    .container>div{
+        width: 100px;
+        height: 100px;
+    }
+    #d-1{
+        background-color: royalblue;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    #d-2{
+        background-color: brown;
+        position: absolute;
+        bottom: 50px;
+        left:50px;
+        z-index: -1;
+      
+    }
+    #d-3{
+        background-color: yellow;
+        position: absolute;
+        bottom: 100px;
+        left: 100px;
+        z-index: -2;
+    }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div id="d-1">1</div>
+       <div id="d-2">2</div>
+       <div id="d-3">3</div>
+   </div> 
+</body>
+</html>
